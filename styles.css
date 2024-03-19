@@ -61,37 +61,73 @@ button:hover {
 .navbar button {
   margin-left: 50px; /* Movendo 10 pixels para a esquerda */
 }
+
 .conteudo {
-  display: flex; /* Utiliza o flexbox para alinhar os elementos */
-  justify-content: flex-start; /* Alinha os elementos à esquerda */
-  align-items: center; /* Centraliza verticalmente */
-  margin-left: 100px;
-  width: 100%; /* Garante que a div de conteúdo ocupe toda a largura */
+  display: flex;
+  justify-content: center; /* Agora centraliza todo o conteúdo */
+  align-items: flex-start; /* Alinha os itens no início verticalmente */
+  margin-left: -50%; /* Mova todos os elementos para a esquerda */
+  width: 100%;
 }
 
 .center-image {
-  width: 400px; /* Largura desejada */
-  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  width: 350px;
+  height: auto;
 }
 
 .image-text-container {
   position: relative;
+  text-align: center; /* Centraliza o texto */
 }
 
 .image-text {
   position: absolute;
-  top: 15%;
+  top: 5%; /* Ajusta a posição vertical do texto */
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  transform: translateX(-50%);
   color: white;
   font-size: 30px;
-  opacity: 0.8;
-  background-color: transparent;
-  padding: 0;
   font-family: 'Orbitron', sans-serif;
-  max-width: 80%; /* Defina a largura máxima do texto para 80% da largura disponível */
-  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-  overflow: hidden; /* Oculta qualquer parte do texto que ultrapasse a largura máxima */
-  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto que ultrapassa a largura máxima */
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+.image-text2-container {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 20px; /* Adiciona espaço entre o texto e os botões */
+}
+
+.image-text2 {
+  position: relative; /* Adiciona posição relativa para ajustar a posição vertical */
+  top: -50px; /* Move o texto um pouco para cima */
+  color: white;
+  font-size: 20px;
+  letter-spacing: 7px;
+  font-family: 'Orbitron', sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 5px #5E1DF4, 
+  0 0 10px #9E76F7, 
+  0 0 15px #9E76F7, 
+  0 0 20px #9E76F7, 
+  0 0 25px #9E76F7, 
+  0 0 30px #9E76F7, 
+  0 0 35px #9E76F7;
+}
+.button-down{
+  background-color: #3D2B7F;
+  font-size: 10px;
+  margin-left: 50px; /* Alinha o botão à direita */
+ }
+
+.button-down2{
+  font-size: 10px;
+}
+
+
+
+
