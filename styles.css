@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* 100% da altura da viewport */
+  background-image: url(Css/images/background-controller.png)}
+
+.logo {
+  position: fixed; /* Define a posição fixa */
+  left: 0; /* Posiciona a logo na extremidade esquerda */
+  top: 10px; /* Ajuste conforme necessário para definir a distância do topo */
+  z-index: 1001; /* Certifica-se de que a logo esteja acima da barra de navegação */
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Define o background como transparente */
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-end; /* Altere para flex-end para alinhar os botões à direita */
+  align-items: center;
+  z-index: 1000;
+}
+
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: none;
+  transition: box-shadow 0.1s;
+  color: #ffffff;
+  border: transparent;
+  margin-right: 50px;
+  border-bottom: 2px solid #3D2B7F;
+}
+
+button:hover {
+  text-shadow: 0 0 50px #ffffff, 0 0 15px #ffffff, 0 0 15px #ffffff; /* Adiciona um efeito de brilho (glitter) ao botão quando está em foco */
+  transition: box-shadow 0.5s ease; /* Adiciona uma transição suave para o efeito de brilho */
+  box-shadow: 0 5px 15px rgba(255, 0, 255, 0.5);
+  border: transparent;
+  margin-right: 50px;
+  border-bottom: 2px solid #8352F7;
+ }
+ 
+
+.navbar button {
+  margin-left: 50px; /* Movendo 10 pixels para a esquerda */
+}
+.conteudo {
+  display: flex; /* Utiliza o flexbox para alinhar os elementos */
+  justify-content: flex-start; /* Alinha os elementos à esquerda */
+  align-items: center; /* Centraliza verticalmente */
+  margin-left: 100px;
+  width: 100%; /* Garante que a div de conteúdo ocupe toda a largura */
+}
+
+.center-image {
+  width: 400px; /* Largura desejada */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+.image-text-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  opacity: 0.8;
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  max-width: 80%; /* Defina a largura máxima do texto para 80% da largura disponível */
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  overflow: hidden; /* Oculta qualquer parte do texto que ultrapasse a largura máxima */
+  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto que ultrapassa a largura máxima */
+}
