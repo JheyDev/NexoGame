@@ -5,7 +5,12 @@ body {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   height: 100vh; /* 100% da altura da viewport */
-  background-image: url(Css/images/background-controller.png)}
+  background-image: url(Css/images/background-controller.png);
+  background-size: 100%; /* Redimensiona o background */
+  background-position: right top -15px; /* Ajusta o background para a direita e para baixo */
+}
+
+
 
 .logo {
   position: fixed; /* Define a posição fixa */
@@ -118,6 +123,7 @@ button:hover {
   0 0 30px #9E76F7, 
   0 0 35px #9E76F7;
 }
+
 .button-down{
   background-color: #3D2B7F;
   font-size: 10px;
@@ -128,6 +134,22 @@ button:hover {
   font-size: 10px;
 }
 
+.redes-sociais {
+  position: fixed;
+  bottom: 20px;
+  right: 230px;
+  font-size: 20px;
+}
+
+.redes-sociais a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px; /* Espaçamento entre os ícones */
+}
+
+.redes-sociais a:last-child {
+  margin-right: -20; /* Remove o espaçamento após o último ícone */
+}
 
 
 
